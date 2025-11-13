@@ -1,0 +1,45 @@
+# Build results
+bin/
+obj/
+out/
+TestResults/
+*.exe
+*.dll
+*.log
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio folders
+.vs/
+
+# MacOS / Windows
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+*.env
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+
+# Publish outputs
+publish/
+*.pubxml
+*.Publish.xml
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# Backup files
+*.bak
+*.tmp
+
+# JetBrains Rider
+.idea/
