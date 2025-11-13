@@ -181,14 +181,14 @@ app.UseCors("AllowAll");
 
 app.UseMiddleware<ExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Clean arquitecture API");
     });
-}
+// }
 
 app.UseHttpsRedirection();
 
