@@ -173,7 +173,11 @@ builder.Services.AddSwaggerGen(options =>
 #endregion
 
 #region 🚀 Construcción y ejecución
-builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(5229));
+builder.WebHost.ConfigureKestrel(options =>
+{
+    var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+    options.ListenAnyIP(int.Parse(port));
+});
 
 var app = builder.Build();
 
